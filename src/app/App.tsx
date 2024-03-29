@@ -5,6 +5,7 @@ import Error404 from "../common/Error404"
 import { ConverterCurrency } from "../features/ConverterCurrency"
 import { CurrentExchangeRates } from "../features/CurrentExchangeRates"
 import { S } from "../common/_styles"
+import { LinearProgress } from "@mui/material"
 
 export const PATH = {
   CONVERTER_CURRENCY: "ConverterCurrency",
@@ -23,6 +24,7 @@ function App() {
           <option>Пункт 2</option>
         </select>
       </S.HeaderWrapper>
+      {"loading" === "loading" && <LinearProgress />}
       <S.BodyWrapper>
         <Routes>
           <Route path={"/"} element={<Navigate to={PATH.CURRENT_EXCHANGE_RATES} />} />

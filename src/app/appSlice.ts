@@ -12,16 +12,16 @@ const slice = createSlice({
 })
 
 // thunks
-const fetchCurrencies = createAppAsyncThunk<any, undefined>(`${slice.name}/fetchCurrencies`, async (_, thunkAPI) => {
-  const { dispatch, rejectWithValue } = thunkAPI
-  try {
-    dispatch(appActions.setAppStatus({ status: "loading" }))
-    const res = await todolistsAPI.getTasks(todolistId)
-    const tasks = res.data.items
-    dispatch(appActions.setAppStatus({ status: "succeeded" }))
-    return { tasks, todolistId }
-  } catch (e) {
-    handleServerNetworkError(e, dispatch)
-    return rejectWithValue(null)
-  }
-})
+// const fetchCurrencies = createAppAsyncThunk<any, undefined>(`${slice.name}/fetchCurrencies`, async (_, thunkAPI) => {
+//   const { dispatch, rejectWithValue } = thunkAPI
+//   try {
+//     // dispatch(appActions.setAppStatus({ status: "loading" }))
+//     const res = await todolistsAPI.getTasks(todolistId)
+//     const tasks = res.data.items
+//     // dispatch(appActions.setAppStatus({ status: "succeeded" }))
+//     return { tasks, todolistId }
+//   } catch (e) {
+//     handleServerNetworkError(e, dispatch)
+//     return rejectWithValue(null)
+//   }
+// })
