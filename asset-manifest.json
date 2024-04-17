@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/currency-conversion-spa/static/css/main.bc58292b.css",
+    "main.js": "/currency-conversion-spa/static/js/main.c962671d.js",
+    "static/media/bg.svg": "/currency-conversion-spa/static/media/bg.e8c9b97c535163b5bee8666580cb7bb9.svg",
+    "index.html": "/currency-conversion-spa/index.html",
+    "main.bc58292b.css.map": "/currency-conversion-spa/static/css/main.bc58292b.css.map",
+    "main.c962671d.js.map": "/currency-conversion-spa/static/js/main.c962671d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc58292b.css",
+    "static/js/main.c962671d.js"
+  ]
+}
