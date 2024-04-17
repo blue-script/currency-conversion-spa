@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import "./App.css"
-import { BrowserRouter, Navigate, NavLink, Route, Routes } from "react-router-dom"
+import { BrowserRouter, HashRouter, Navigate, NavLink, Route, Routes } from "react-router-dom"
 import Error404 from "../common/Error404"
 import ConverterCurrency from "../features/Converter/ConverterCurrency"
 import CurrentExchangeRates from "../features/Rates/CurrentExchangeRates"
@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <s.AppContainer>
         <s.HeaderWrapper>
           <s.NavWrapper><NavLink to={PATH.CONVERTER_CURRENCY}>CONVERTER_CURRENCY</NavLink></s.NavWrapper>
@@ -50,7 +50,7 @@ function App() {
           </Routes>
         </s.BodyWrapper>
       </s.AppContainer>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
