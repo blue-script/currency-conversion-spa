@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import bg from "../assets/bg.svg"
+
+const AppContainer = styled.div`
+    background-image: url(${bg});
+`
 
 const BodyWrapper = styled.div`
     display: flex;
@@ -26,18 +31,19 @@ const NavWrapper = styled.div`
         color: #1e3786;
     }
 
-    & > a.active {
+    & > a:active {
         text-decoration: none;
         color: #212c2d;
     }
 
     & > a:hover {
-        color: steelblue; /* Цвет ссылки */
+        color: steelblue;
     }
 `
 
-export const S = {
+export const s = {
   BodyWrapper,
   HeaderWrapper,
-  NavWrapper
+  NavWrapper,
+  AppContainer
 }
